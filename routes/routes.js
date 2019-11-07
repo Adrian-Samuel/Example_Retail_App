@@ -6,12 +6,11 @@ const {getSales, getParams} = require('../src/getData')
 
 Router.get('/', async (req, res)=> {
     const {requestType, accountID, systemUserID, employeeID, saleID, customerID, shopID, returnURL, registerID } = await getParams(req);
+    
 
-  
-
-    const {saleTotal, taxTotal} = await getSales(req);
+    const { taxTotal, calcTotal} = await getSales(req);
     res.render('index', {
-        saleTotal: saleTotal,
+        saleTotal: calcTotal,
         employeeID: employeeID,
         requestType: requestType,
         accountID: accountID,
