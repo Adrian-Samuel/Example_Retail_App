@@ -16,12 +16,12 @@ const getSales = async (req) => {
         // Getting Data from Sale Request
         const {
             calcTotal,
-            taxTotal
+            calcTax1
         } = sale_response.data.Sale;
 
         return {
             calcTotal: calcTotal,
-            taxTotal: taxTotal,
+            taxTotal: calcTax1,
         }
     } catch (err) {
         console.log(err)
