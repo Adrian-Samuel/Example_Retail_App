@@ -1,0 +1,59 @@
+doctype 
+html(lang="en")
+    head
+        link(rel="stylesheet", type="text/css" href="stylesheet/style.css")
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+        h1 Mock Loyalty App
+        h2 Example List of Full Query Paramters Retrieved from URL
+        div#container
+            table
+                tr
+                    thead
+                        th Request Type
+                        th Account ID
+                        th SystemUser ID (useless)
+                        th Employee ID 
+                        th sale ID
+                        th Customer ID
+                        th Shop ID
+                        th Register ID
+                        th Return URL
+                    
+                tbody
+                    tr
+                        td #{requestType}
+                        td #{accountID}
+                        td #{systemUserID}
+                        td #{employeeID}
+                        td #{saleID}
+                        td #{shopID}
+                        td #{taxTotal}
+                        td #{registerID}
+                        td(id="link" style="text-decoration:underline; color: blue; cursor: pointer") #{returnURL}
+
+        h2 Example Sales Data Retrieved based from Paramter Data
+        div#container
+            table
+                tr
+                    thead
+                    
+                        th Sale Total
+                        th Tax Total
+                        th Account ID
+                      
+                    
+                tbody
+                    tr
+                     
+                        td #{saleTotal}
+                        td #{taxTotal}
+                        td #{accountID}
+                        
+
+
+    script(src="src/script.js")
+    

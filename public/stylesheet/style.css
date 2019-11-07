@@ -1,0 +1,26 @@
+body {
+    background-color:lightgoldenrodyellow;
+    background-image: url('/assets/lightspeedlogo.png');
+    background-repeat: no-repeat;
+    background-size: 200px 80px;
+    
+}
+
+h1,h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td,tr, th {
+    padding: 10px;
+}
