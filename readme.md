@@ -5,6 +5,8 @@ You can copy and paste an expiring bearer token into an .env file for testing
 
 - To run App with Docker
 ```bash
+    touch .env && echo "TOKEN=" > .env
+    // Insert your Bearer token in the newly created .env file
 chmod +x exec.sh
 Then run ./exec.sh
 ```
