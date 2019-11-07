@@ -1,14 +1,14 @@
 {
-  "name": "cbd_example_app",
+  "name": "register_app_example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demonstrates query paramter output from a Custom Button",
   "main": "app.js",
   "scripts": {
     "start": "node bin/www",
     "dev": "nodemon bin/www"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adrian_Samuel",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.0",
