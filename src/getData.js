@@ -1,14 +1,9 @@
 const {
     request
 } = require('../utils/client');
-const fs = require('fs').promises;
-
-
 const getSales = async (req) => {
     try {
-        console.log(req.headers)
-await fs.writeFile('output.txt', req, "utf8")
-        // Making Sale Request
+
         const {
             saleID,
             accountID
