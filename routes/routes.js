@@ -1,14 +1,31 @@
 const express = require('express');
 
 const Router = express.Router();
-const {getSales, getParams} = require('../src/getData')
+const {
+    getSales,
+    getParams
+} = require('../src/getData')
 
 
-Router.get('/', async (req, res)=> {
-    const {requestType, accountID, systemUserID, employeeID, saleID, customerID, shopID, returnURL, registerID } = await getParams(req);
+Router.get('/', async (req, res) => {
     
+    const {
+        requestType,
+        accountID,
+        systemUserID,
+        employeeID,
+        saleID,
+        customerID,
+        shopID,
+        returnURL,
+        registerID
+    } = await getParams(req);
+   
+    const {
+        taxTotal,
+        calcTotal
+    } = await getSales(req);
 
-    const { taxTotal, calcTotal} = await getSales(req);
     res.render('index', {
         saleTotal: calcTotal,
         employeeID: employeeID,
