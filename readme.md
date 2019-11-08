@@ -7,6 +7,7 @@ You can copy and paste an expiring bearer token into an .env file for testing
 ```bash
     touch .env && echo "TOKEN=" > .env
 # Insert your Bearer token in the newly created .env file
+# Like this: TOKEN=Bearer XXXXX
 chmod +x exec.sh
 Then run ./exec.sh
 ```
