@@ -1,6 +1,4 @@
 const express = require('express');
-const bodyParser = require('express');
-const pug = require('pug');
 const path = require('path');
 const views = require('./routes/routes');
 
